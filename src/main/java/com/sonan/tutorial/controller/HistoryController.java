@@ -2,6 +2,7 @@ package com.sonan.tutorial.controller;
 
 import com.sonan.tutorial.model.HistoryDto;
 import com.sonan.tutorial.service.HistoryService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +16,8 @@ import java.util.List;
  * Git Hub : https://github.com/AnJaeSeongS2
  */
 @RestController
-@RequestMapping("/")
+@RequestMapping("/histories")
+@Slf4j
 public class HistoryController {
     private final HistoryService service;
 
@@ -23,8 +25,9 @@ public class HistoryController {
         this.service = service;
     }
 
-    @GetMapping("/{startIds}")
+    @GetMapping("/{startId}")
     public ResponseEntity<List<HistoryDto>> getAllDescStartWithStartId(@PathVariable Integer startId) {
+        log.info(String.valueOf(startId));
         return ResponseEntity.ok(service.getAllHistoriesDesc(startId));
     }
 

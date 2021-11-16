@@ -1,9 +1,9 @@
 # test-code-trial-jpa-with-map-struct
 
-purpose:
-1. why can't success jpa test code on creating table with H2Dialect on H2:mem
+목적:
+1. 다른 거대 프로젝트에서, JPA 테스트 코드 내에서 H2Dialect on H2:mem으로 테이블을 만들 때, 성공하지 못하는 이유 찾기
 
-technology stack:
+기술 스택:
 1. spring boot
 2. spring jpa
 3. lombok

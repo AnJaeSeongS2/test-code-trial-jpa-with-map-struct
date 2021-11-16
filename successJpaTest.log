@@ -1,0 +1,140 @@
+17:38:33.266 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:38:33.286 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:38:33.338 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.sonan.tutorial.repository.HistoryRepositoryTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:38:33.362 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sonan.tutorial.repository.HistoryRepositoryTest], using SpringBootContextLoader
+17:38:33.367 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sonan.tutorial.repository.HistoryRepositoryTest]: class path resource [com/sonan/tutorial/repository/HistoryRepositoryTest-context.xml] does not exist
+17:38:33.368 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sonan.tutorial.repository.HistoryRepositoryTest]: class path resource [com/sonan/tutorial/repository/HistoryRepositoryTestContext.groovy] does not exist
+17:38:33.368 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.sonan.tutorial.repository.HistoryRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:38:33.369 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.sonan.tutorial.repository.HistoryRepositoryTest]: HistoryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:38:33.474 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.sonan.tutorial.repository.HistoryRepositoryTest]
+17:38:33.609 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jaeseong/workspace_spring/tutorial-jap-with-map-struct/build/classes/java/main/com/sonan/tutorial/TutorialJapWithMapStructApplication.class]
+17:38:33.610 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.sonan.tutorial.TutorialJapWithMapStructApplication for test class com.sonan.tutorial.repository.HistoryRepositoryTest
+17:38:33.835 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.sonan.tutorial.repository.HistoryRepositoryTest]: using defaults.
+17:38:33.836 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:38:33.899 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62459444, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a8394d0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1b727f59, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4dde2294, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3f778df, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25745965, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2d746225, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@11023f9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@290b8ce2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2e3347d7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@20587d7e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@20a6403f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@55bfa455, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@61864cca, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2566e09]
+17:38:33.906 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@da62020 testClass = HistoryRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1e2d5700 testClass = HistoryRepositoryTest, locations = '{}', classes = '{class com.sonan.tutorial.TutorialJapWithMapStructApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3e2acbe3, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@65ec7c85, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@78bea9c0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@32b3c5e5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6052deec, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@79a87818], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:38:33.996 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.4.12)
+
+2021-11-16 17:38:34.855  INFO 10892 --- [    Test worker] c.s.t.repository.HistoryRepositoryTest   : Starting HistoryRepositoryTest using Java 1.8.0_251 on Jaeseongs-MacBook-Pro.local with PID 10892 (started by jaeseong in /Users/jaeseong/workspace_spring/tutorial-jap-with-map-struct)
+2021-11-16 17:38:34.859  INFO 10892 --- [    Test worker] c.s.t.repository.HistoryRepositoryTest   : No active profile set, falling back to default profiles: default
+2021-11-16 17:38:36.901  INFO 10892 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-16 17:38:36.993  INFO 10892 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2021-11-16 17:38:40.224  INFO 10892 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-16 17:38:40.422  INFO 10892 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-16 17:38:41.048  INFO 10892 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-16 17:38:41.361  INFO 10892 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-16 17:38:41.908  INFO 10892 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-16 17:38:41.977  INFO 10892 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate:
+
+    drop table if exists tuto_history CASCADE
+Hibernate:
+
+    create table tuto_history (
+       id integer not null,
+        code integer,
+        name varchar(255),
+        primary key (id)
+    )
+2021-11-16 17:38:43.681  INFO 10892 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-16 17:38:43.705  INFO 10892 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 17:38:45.742  WARN 10892 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-16 17:38:47.007  INFO 10892 --- [    Test worker] c.s.t.repository.HistoryRepositoryTest   : Started HistoryRepositoryTest in 13.001 seconds (JVM running for 14.911)
+Hibernate:
+    select
+        historyent0_.id as id1_0_0_,
+        historyent0_.code as code2_0_0_,
+        historyent0_.name as name3_0_0_
+    from
+        tuto_history historyent0_
+    where
+        historyent0_.id=?
+2021-11-16 17:38:47.581 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+Hibernate:
+    insert
+    into
+        tuto_history
+        (code, name, id)
+    values
+        (?, ?, ?)
+2021-11-16 17:38:47.629 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [123]
+2021-11-16 17:38:47.630 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [asdf]
+2021-11-16 17:38:47.630 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [1]
+HistoryEntity(id=1, username=asdf, code=123)
+Hibernate:
+    select
+        historyent0_.id as id1_0_0_,
+        historyent0_.code as code2_0_0_,
+        historyent0_.name as name3_0_0_
+    from
+        tuto_history historyent0_
+    where
+        historyent0_.id=?
+2021-11-16 17:38:47.644 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+Hibernate:
+    insert
+    into
+        tuto_history
+        (code, name, id)
+    values
+        (?, ?, ?)
+2021-11-16 17:38:47.648 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [234]
+2021-11-16 17:38:47.649 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [asdf2]
+2021-11-16 17:38:47.660 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [2]
+HistoryEntity(id=2, username=asdf2, code=234)
+Hibernate:
+    select
+        historyent0_.id as id1_0_,
+        historyent0_.code as code2_0_,
+        historyent0_.name as name3_0_
+    from
+        tuto_history historyent0_
+    where
+        historyent0_.id>=?
+    order by
+        historyent0_.id desc
+2021-11-16 17:38:48.094 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-11-16 17:38:48.097 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [2]
+2021-11-16 17:38:48.133 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([code2_0_] : [INTEGER]) - [234]
+2021-11-16 17:38:48.135 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_0_] : [VARCHAR]) - [asdf2]
+2021-11-16 17:38:48.136 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [1]
+2021-11-16 17:38:48.137 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([code2_0_] : [INTEGER]) - [123]
+2021-11-16 17:38:48.138 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_0_] : [VARCHAR]) - [asdf]
+Hibernate:
+    select
+        historyent0_.id as id1_0_,
+        historyent0_.code as code2_0_,
+        historyent0_.name as name3_0_
+    from
+        tuto_history historyent0_
+    where
+        historyent0_.id>=?
+    order by
+        historyent0_.id desc
+2021-11-16 17:38:48.159 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2021-11-16 17:38:48.161 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [2]
+2021-11-16 17:38:48.162 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([code2_0_] : [INTEGER]) - [234]
+2021-11-16 17:38:48.164 TRACE 10892 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name3_0_] : [VARCHAR]) - [asdf2]
+2021-11-16 17:38:48.247  INFO 10892 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 17:38:48.247  INFO 10892 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Hibernate:
+
+    drop table if exists tuto_history CASCADE
+2021-11-16 17:38:48.249  WARN 10892 --- [extShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2021-11-16 17:38:48.250 ERROR 10892 --- [extShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-11-16 17:38:48.251  WARN 10892 --- [extShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2021-11-16 17:38:48.251 ERROR 10892 --- [extShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-11-16 17:38:48.251  WARN 10892 --- [extShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2021-11-16 17:38:48.252  INFO 10892 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-16 17:38:48.261  INFO 10892 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+BUILD SUCCESSFUL in 20s
+4 actionable tasks: 3 executed, 1 up-to-date
+5:38:48 PM: Task execution finished ':test --tests "com.sonan.tutorial.repository.HistoryRepositoryTest.findByIdOrderByIdDesc"'.

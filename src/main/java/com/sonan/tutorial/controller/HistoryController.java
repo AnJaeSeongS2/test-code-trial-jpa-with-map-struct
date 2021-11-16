@@ -4,10 +4,7 @@ import com.sonan.tutorial.model.HistoryDto;
 import com.sonan.tutorial.service.HistoryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,4 +28,8 @@ public class HistoryController {
         return ResponseEntity.ok(service.getAllHistoriesDesc(startId));
     }
 
+    @PostMapping
+    public void post(@RequestBody HistoryDto dto) {
+        service.save(dto);
+    }
 }

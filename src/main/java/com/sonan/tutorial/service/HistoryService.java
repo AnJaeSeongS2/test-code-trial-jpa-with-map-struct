@@ -22,7 +22,11 @@ public class HistoryService {
 
     public List<HistoryDto> getAllHistoriesDesc(Integer startId) {
         List<HistoryDto> result = new ArrayList<>();
-        repo.findByIdOrderByIdDesc(startId).forEach(entity -> result.add(HistoryMapper.INSTANCE.fromEntity(entity)));
+        repo.findByIdGreaterThanEqualOrderByIdDesc(startId).forEach(entity -> result.add(HistoryMapper.INSTANCE.fromEntity(entity)));
         return result;
+    }
+
+    public void save(HistoryDto dto) {
+        repo.save(HistoryMapper.INSTANCE.toEntity(dto));
     }
 }

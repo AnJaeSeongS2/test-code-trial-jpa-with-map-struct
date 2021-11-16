@@ -12,5 +12,6 @@ import java.util.List;
  */
 @Repository
 public interface HistoryRepository extends JpaRepository<HistoryEntity, Integer> {
-    List<HistoryEntity> findByIdOrderByIdDesc(Integer id);
+    HistoryEntity save(HistoryEntity entity);
+    List<HistoryEntity> findByIdGreaterThanEqualOrderByIdDesc(Integer id);
 }
